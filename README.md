@@ -41,5 +41,5 @@ python main.py status "ID" "один из статусов":
 
 
 **Дальше в планах:**
--REST API на FastAPI
--Работа с PostgreSQL
+- REST API на FastAPI
+- Работа с PostgreSQL
