@@ -1,30 +1,32 @@
-Добавление новой заметки:
-python main.py add --title "Моя заметка" --content "Текст заметки"
-# --title и --content обязательны
+#Менеджер заметок
 
-python main.py add --title "Срочная задача" --content "Выполнить до завтра" --priority high --tags "работа,срочно"
-#можно так
+**Добавление новой заметки:**
+'python main.py add --title "Моя заметка" --content "Текст заметки"'
+## --title и --content обязательны
 
-Просмотр всех заметок: 
-python main.py list
+'python main.py add --title "Срочная задача" --content "Выполнить до завтра" --priority high --tags "работа,срочно"'
+##можно так
 
-Фильтрация по заметкам:
-python main.py list --status active
-#Вместо --status можно указывать другой параметр, а вместо active по какому значению фильтруем
+**Просмотр всех заметок:**
+'python main.py list'
 
-Поиск по заголовкам, содержанию или тегам:
-python main.py search "..."
+**Фильтрация по заметкам:**
+'python main.py list --status active'
+##Вместо --status можно указывать другой параметр, а вместо active по какому значению фильтруем
 
-Удаление заметки по ID:
-python main.py delete "номер ID"
-ID можно узнать из всего списка
+**Поиск по заголовкам, содержанию или тегам:**
+'python main.py search "..."'
 
-Изменение статуса заметки: 
-python main.py status "ID" "один из статусов":
-Достпуные статусы: active, completed, archived
-По умолчанию идет active
+**Удаление заметки по ID:**
+'python main.py delete "номер ID"'
+##ID можно узнать из всего списка
+
+**Изменение статуса заметки:** 
+'python main.py status "ID" "один из статусов":'
+##Достпуные статусы: active, completed, archived
+##По умолчанию идет active
 
 
-Дальше в планах:
-  REST API на FastAPI
-  Работа с PostgreSQL
+#Дальше в планах:
+-REST API на FastAPI
+-Работа с PostgreSQL
